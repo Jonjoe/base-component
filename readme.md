@@ -5,9 +5,9 @@
 - **NameSpace**: Base
 - **Type**: [functional | higher-order | page]
 - **Options**:
-  - prop1: [Description]
-  - prop2: [Description]
-  - prop3: [Description]
+  - prop1: STRING (default 'defaultValue') [Description]
+  - prop2: STRING (default 'defaultValue') [Description]
+  - prop3: STRING (default 'defaultValue') [Description]
 
 ```
 <Base
