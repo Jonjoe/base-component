@@ -5,7 +5,7 @@
 */
 
 // Base Imports ====================================================
-import React, { Component } from 'react'
+import React from 'react'
 import * as Styles from './styles'
 
 // ... Imports =====================================================
