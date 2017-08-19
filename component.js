@@ -7,9 +7,9 @@
 // Base Imports ====================================================
 import React from 'react'
 import PropTypes from 'prop-types'
-import * as Styles from './styles'
 
 // ... Imports =====================================================
+import './styles.css'
 // import 'something'
 
 // Base stateless component ========================================
