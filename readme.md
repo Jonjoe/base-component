@@ -1,4 +1,4 @@
-# Base Component
+# ExampleComponent Component
 
 [Summary]
 
@@ -10,7 +10,7 @@
   - prop3: STRING (default 'defaultValue') [Description]
 
 ```
-<Base
+<ExampleComponent
   prop1={exampleInput}
   prop2={exampleInput}
   prop3={exampleInput}
