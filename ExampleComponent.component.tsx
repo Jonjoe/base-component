@@ -5,7 +5,7 @@ interface ExampleComponentProps {
   children: React.ReactNode
 }
 
-function ExampleComponent(): JSX.Element {
+function ExampleComponent(props: ExampleComponentProps): JSX.Element {
   const { children } = props
 
   return (
