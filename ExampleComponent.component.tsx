@@ -15,4 +15,4 @@ function ExampleComponent(props: ExampleComponentProps): JSX.Element {
   )
 }
 
-export default ExampleComponent as React.FC<ExampleComponentProps>
+export default ExampleComponent
