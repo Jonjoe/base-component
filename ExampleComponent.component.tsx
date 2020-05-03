@@ -1,11 +1,20 @@
 import React from "react"
 import * as Styled from "./ExampleComponent.styles"
 
-interface ExampleComponentProps {
+/**
+ * @name ExampleComponent
+ *
+ * [Insert omponent description]
+ *
+ * @returns {JSX}
+ */
+
+
+export type ExampleComponentProps {
   children: React.ReactNode
 }
 
-function ExampleComponent(props: ExampleComponentProps): JSX.Element {
+const ExampleComponent: React.FC<ExampleComponentProps> = (props: ExampleComponentProps): JSX.Element => {
   const { children } = props
 
   return (
@@ -15,4 +24,4 @@ function ExampleComponent(props: ExampleComponentProps): JSX.Element {
   )
 }
 
-export default ExampleComponent as React.FC
+export default ExampleComponent
