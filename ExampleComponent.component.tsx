@@ -1,5 +1,5 @@
-import React from "react"
-import * as Styled from "./ExampleComponent.styles"
+import React from "react";
+import * as Styled from "./ExampleComponent.styles";
 
 /**
  * @name ExampleComponent
@@ -9,19 +9,16 @@ import * as Styled from "./ExampleComponent.styles"
  * @returns {JSX}
  */
 
+export type ExampleComponentProps = {
+  children: React.ReactNode;
+};
 
-export type ExampleComponentProps {
-  children: React.ReactNode
-}
+const ExampleComponent: React.FC<ExampleComponentProps> = (
+  props: ExampleComponentProps
+): JSX.Element => {
+  const { children } = props;
 
-const ExampleComponent: React.FC<ExampleComponentProps> = (props: ExampleComponentProps): JSX.Element => {
-  const { children } = props
+  return <Styled.Container>{children}</Styled.Container>;
+};
 
-  return (
-    <Styled.Container>
-      {children}
-    </Styled.Container>
-  )
-}
-
-export default ExampleComponent
+export default ExampleComponent;
