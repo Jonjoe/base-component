@@ -14,7 +14,7 @@ export type ExampleComponentProps = {
 };
 
 const ExampleComponent: React.FC<ExampleComponentProps> = (
-  props: ExampleComponentProps
+  props
 ): JSX.Element => {
   const { children } = props;
 
