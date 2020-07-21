@@ -13,12 +13,14 @@ export type ExampleComponentProps = {
   children: React.ReactNode;
 };
 
-const ExampleComponent: React.FC<ExampleComponentProps> = (
-  props
-): JSX.Element => {
+const ExampleComponent: React.FC<ExampleComponentProps> = (props): JSX.Element => {
   const { children } = props;
 
-  return <Styled.Container>{children}</Styled.Container>;
+  return (
+    <Styled.Container>
+      {children}
+    </Styled.Container>
+  )
 };
 
 export default ExampleComponent;
