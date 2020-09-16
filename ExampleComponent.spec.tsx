@@ -5,10 +5,12 @@ import ExampleComponent from "./ExampleComponent.component";
 
 test("ExampleComponent renders correctly", () => {
   const component = renderer.create(
-    <ExampleComponent />
+    <ExampleComponent>
+      <p>child component</p>
+    </ExampleComponent>
   );
 
   const tree = component.toJSON();
-  
+
   expect(tree).toMatchSnapshot();
 });
