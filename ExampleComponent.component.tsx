@@ -1,5 +1,6 @@
 import React from "react";
-import * as Styled from "./ExampleComponent.styles";
+
+import "./ExampleComponent.scss"
 
 /**
  * @name ExampleComponent
@@ -19,10 +20,10 @@ const ExampleComponent: React.FC<ExampleComponentProps> = (
   const { children } = props;
 
   return (
-    <Styled.ExampleComponent>
+    <div className="ExampleComponent">
       <p>Some Content</p>
       {children}
-    </Styled.ExampleComponent>
+    </div>
   );
 };
 
