@@ -12,15 +12,18 @@ import "./ExampleComponent.scss"
 
 export type ExampleComponentProps = {
   children: React.ReactNode;
+  className?: string;
 };
 
 const ExampleComponent: React.FC<ExampleComponentProps> = (
   props
 ): JSX.Element => {
-  const { children } = props;
+  const { children, className } = props;
+
+  const classNames = `ExampleComponent ${className}`
 
   return (
-    <div className="ExampleComponent">
+    <div className={classNames}>
       <p>Some Content</p>
       {children}
     </div>
