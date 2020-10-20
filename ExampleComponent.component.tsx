@@ -18,7 +18,7 @@ export type ExampleComponentProps = {
 const ExampleComponent: React.FC<ExampleComponentProps> = (
   props
 ): JSX.Element => {
-  const { children, className } = props;
+  const { children, className = ""} = props;
 
   const classNames = `ExampleComponent ${className}`
 
